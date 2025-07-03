@@ -1,15 +1,14 @@
 from tespy.components import (Source as tSource, Sink as tSink,
                               PowerSource as tPowerSource , PowerSink as tPowerSink)
-from tespy.networks import Network as tNetwork
 
+from tespy.networks import Network as tNetwork
 from tespy.tools import helpers as hlp
 
-import bw2io as bi
 import bw2data as bd
 import bw2calc as bc
 
 class functional_units():
-    #TODO
+    #TODO create class for functional unit
     def __init__(self, components: list, allocationfactors: list) -> None:
         self.components= components
         self.allocationfactors= allocationfactors
@@ -127,8 +126,8 @@ class Network(tNetwork):
         
 
     def export_bw_dataset(self, database=None):
+        #TODO create export function
         pass
-
 
 class Source(tSource):
     def __init__(self, label, **kwargs):
